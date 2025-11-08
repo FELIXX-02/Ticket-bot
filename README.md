@@ -1,2 +1,2 @@
 # Ticket-bot
-Ticket System for Discord
+Ticket System for Server Discord
