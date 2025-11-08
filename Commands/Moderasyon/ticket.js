@@ -12,8 +12,8 @@ const {
 } = require("discord.js");
 
 // 🔑 Token and Owner ID here
-const BOT_TOKEN = "MTQzNjMwNjIzMzc1Njg4MDg5Ng.G94uKw.kqzUwr-yYQCi1lMzhfP6Yun9plrJPWqZr5KL0A";   // Write your bot token here
-const OWNER_ID = "1018202307801915532";
+const BOT_TOKEN = "";   // Write your bot token here
+const OWNER_ID = "";
 
 // Bot client
 const client = new Client({
@@ -153,3 +153,4 @@ client.on("channelDelete", channel => {
 
 // Run the bot
 client.login(BOT_TOKEN);
+
