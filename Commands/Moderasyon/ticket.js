@@ -11,7 +11,7 @@ const {
     ChannelType 
 } = require("discord.js");
 
-// 🔑 Token and Owner ID here
+// Token and Owner ID here
 const BOT_TOKEN = "";   // Write your bot token here
 const OWNER_ID = "";
 
@@ -29,7 +29,7 @@ const client = new Client({
 let ticketCounter = 0;
 const activeTickets = new Map();
 
-// 🔢 Format ticket numbers as 0001
+// Format ticket numbers as 0001
 function formatTicketNumber(num) {
     return num.toString().padStart(4, "0");
 }
@@ -115,7 +115,7 @@ client.on("interactionCreate", async interaction => {
         });
     }
 
-    // 🔒 Shutdown Command
+    //  Shutdown Command
     if (interaction.isChatInputCommand() && interaction.commandName === "shutdown") {
         if (interaction.user.id !== OWNER_ID) {
             return interaction.reply({ 
@@ -153,4 +153,5 @@ client.on("channelDelete", channel => {
 
 // Run the bot
 client.login(BOT_TOKEN);
+
 
